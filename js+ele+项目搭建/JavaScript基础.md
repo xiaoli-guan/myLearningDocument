@@ -1681,7 +1681,7 @@ fruits.sort();  //Apple,Banana,Mango,Orange
 
 ```js
 let list = [1,2,3,4];
-let box = list.slice();
+let box = list.isIndeterminate;
 console.log("list->",list);  //list->[1,2,3,4]
 console.log("box->",box);	 //box->[1,2,3,4]
 
@@ -1728,7 +1728,7 @@ console.log("list->",list);  //list->[1,2,3,'a']
 console.log("box->",box);	 //box->[1,2,3,4,'b']
 ```
 
-方案四：Array。form()
+方案四：Array.from()
 
 ```js
 let list = [1,2,3,4];
