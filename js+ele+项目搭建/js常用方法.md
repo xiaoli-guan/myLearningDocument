@@ -20,3 +20,20 @@ arr.includes(1,-1); //false
 arr.includes(2,-4); //true
 ```
 
+## 2、JSON的parse和stringify
+
+```js
+//将json字符串转对象
+JSON.parse(jsonString)
+//将对象转json字符串
+JSON.stringify(obj)
+```
+
+例子：
+
+```js
+//数组深拷贝
+arr = JSON.parse(JSON.stringify(arr));
+```
+
+> 将数组转json字符串再转回数组，是深拷贝，而且没有原型链
