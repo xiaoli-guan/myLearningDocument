@@ -1,5 +1,7 @@
 <h1><center>js常用方法</center></h1>
 
+# 一、Array
+
 ## 1、includes
 
 includes()方法用来判断一个数组是否包含一个指定的值，如果是返回 true，否则false。
@@ -20,7 +22,9 @@ arr.includes(1,-1); //false
 arr.includes(2,-4); //true
 ```
 
-## 2、JSON的parse和stringify
+# 二、JSON
+
+## 1、parse和stringify
 
 ```js
 //将json字符串转对象
@@ -37,3 +41,20 @@ arr = JSON.parse(JSON.stringify(arr));
 ```
 
 > 将数组转json字符串再转回数组，是深拷贝，而且没有原型链
+
+# 三、Set
+
+```js
+let s = new Set();//声明
+s.add(item);
+```
+
+
+
+# 四、Map
+
+```js
+let m = new Map();
+m.set(key,value);
+```
+
